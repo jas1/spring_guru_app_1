@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Spring Framework Guru: practice</title>
+</head>
+<body>
+	<h1>Author List</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>first Name</th>
+				<th>last Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="author : ${authors}">
+				<td th:text="${author.id}">def id</td>
+				<td th:text="${author.firstName}">def title</td>
+				<td th:text="${author.lastName}">def pub</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -14,7 +14,8 @@ public class Publisher {
 	private String name;
 	private String adress;
 
-	
+	public Publisher() {
+	}
 	
 	public Publisher(String name) {
 		super();
